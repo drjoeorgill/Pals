@@ -1,0 +1,1 @@
+This Pals repository contains python scripts used to fit Positron Annihilation Lifetime Spectroscopy historgrams, calculate charachtoristic positron lifetimes and convert lifetimes to free volume void sizes, using the TaoEldrup model.
