@@ -66,7 +66,7 @@ ax2.tick_params(axis="y", labelcolor=CB[1])
 
 #%%samples
 
-sample_list = ['240328-10-47_T1']
+sample_list = ['test']
 #%%
 #exp initial guess
 iA = 1000000
