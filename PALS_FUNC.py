@@ -4,7 +4,7 @@ Created on Thu Jun 29 13:30:24 2023
 
 @author: php20jo
 """
-#new
+
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
@@ -30,8 +30,6 @@ print("Current working directory: {0}".format(os.getcwd()))
 
 # Change the current working directory
 os.chdir('C:/Users/pczjo/OneDrive - The University of Nottingham/Desktop/Pals')
-#os.chdir('C:/Users/php20jo/Desktop/CONTIN/dpscience-DCONTINPALS-64edb59/pyDCONTINPALS/Data/ANDYcontin/')
-#os.chdir('C:/Users/php20jo/Desktop/CONTIN/dpscience-DCONTINPALS-64edb59/pyDCONTINPALS/Data/F_24/')
 #os.chdir('C:/Users/php20jo/Desktop/experiments/PALSvsComputer')
 
 # Print the current working directory
@@ -85,7 +83,7 @@ istd=0.21
 def load(sample,plot,print_values):
     '''
     Inputs: sample = sample number in txt doc / list above
-    plot = 'yes' or 'no' if you wanr graph
+    plot = 'yes' or 'no' if you want graph
     print_values = 'yes' if you want values to be printed
     
     returns: graph of fit if plot = 'yes'
@@ -182,6 +180,7 @@ def load(sample,plot,print_values):
         plt.xlabel('Time [ns]')
         plt.ylabel('Counts')
         plt.legend()
+        plt.show()
     return(float(FV), FVe, FFV3, FFV3e,label)
 
 #%%run pals func
