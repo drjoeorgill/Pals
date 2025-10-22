@@ -4,7 +4,7 @@ Created on Thu Jun 29 13:30:24 2023
 
 @author: php20jo
 """
-
+#new
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
