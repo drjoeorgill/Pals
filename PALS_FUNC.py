@@ -127,7 +127,7 @@ def load(sample,plot,print_values):
     Nberr=Nerr[start:stop]
     
     #fit convolution func
-    popt, pcov = curve_fit(conv,x,y,p0=(iheight,iposition,istd,iA,il1,iB,iC,il3),bounds=(0,np.inf),sigma=Nberr)
+    popt, pcov = curve_fit(conv,x,y,p0=(iheight,iposition,istd,iA,il1,iB,iC,il3),bounds=(0,np.inf),sigma=np.mean(Nberr))
     height,position,std,A,l1,B,C,l3 = popt #define optimised variables
     l2 = 1/0.125 #define L2 because it is fixed in the function
     t3 = 1/l3 #calculate the oPs lifetime
@@ -186,7 +186,7 @@ def load(sample,plot,print_values):
 #%%run pals func
 
 
-FV, FVerr, FFV3,FFVerr, label = load(0,'yes','yes')
+FV, FVerr, FFV3,FFVerr, label = load(2,'yes','yes')
 
 
 #%% the rest is just looping through samples left in as an example
